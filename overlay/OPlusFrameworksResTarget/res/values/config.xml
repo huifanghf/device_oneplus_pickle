@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     SPDX-FileCopyrightText: The LineageOS Project
-     SPDX-License-Identifier: Apache-2.0
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
 -->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Minimum screen brightness setting allowed by power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -117,10 +130,9 @@
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
-        <item>0</item>    <!-- Vivid, RenderIntent[0], PQModeId[7] -->
-        <item>256</item>  <!-- Natural, RenderIntent[256], PQModeId[23] -->
-        <item>258</item>  <!-- Cinematic, RenderIntent[258], PQModeId[10] -->
-        <item>259</item>  <!-- Brilliant, RenderIntent[259], PQModeId[11] -->
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
     </integer-array>
 
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
@@ -181,6 +193,10 @@
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
 
+    <!-- If true, the doze component is not started until after the screen has been
+         turned off and the screen off animation has been performed. -->
+    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
+
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
          states. -->
@@ -219,9 +235,6 @@
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/bin/surfaceflinger"</item>
     </string-array>
-
-    <!-- Bytes that the PinnerService will pin for Home app -->
-    <integer name="config_pinnerHomePinBytes">6291456</integer>
 
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
@@ -362,6 +375,12 @@
     <!-- MMS user agent prolfile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
+    <!-- Remote server that can provide NTP responses. -->
+    <string translatable="false" name="config_ntpServer">pool.ntp.org</string>
+
+    <!-- Determines whether the shell features all run on another thread. -->
+    <bool name="config_enableShellMainThread">true</bool>
+
     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->
@@ -405,33 +424,4 @@
 
     <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
     <bool name="config_telephony5gNonStandalone">true</bool>
-
-    <!-- A string config in svg path format for the main display shape.
-         (@see https://www.w3.org/TR/SVG/paths.html#PathData).
-
-         This config must be set unless:
-         1. {@link Configuration#isScreenRound} is true which means the display shape is circular
-            and the system will auto-generate a circular shape.
-         2. The display has no rounded corner and the system will auto-generate a rectangular shape.
-         (@see DisplayShape#createDefaultDisplayShape)
-
-         Note: If the display supports multiple resolutions, please define the path config based on
-         the highest resolution so that it can be scaled correctly in each resolution. -->
-    <string name="config_mainDisplayShape">M20 0h1040s20 0 20 20v2360s0 20 -20 20h-1040s-20 0 -20 -20v-2360s0 -20 20 -20</string>
-
-    <!-- The list of packages to automatically opt in of fresh rate suppressing by small area
-         detection. Format of this array should be packageName:threshold and threshold value should
-         be between 0 to 1-->
-    <string-array name="config_smallAreaDetectionAllowlist" translatable="false">
-        <!-- Add packages:threshold here -->
-        <item>com.tencent.mm:0.07</item>
-        <item>com.facebook.katana:0.07</item>
-        <item>com.instagram.android:0.07</item>
-        <item>com.spotify.music:0.05</item>
-        <item>com.reddit.frontpage:0.07</item>
-        <item>com.zhiliaoapp.musically:0.07</item>
-        <item>com.bilibili.app.in:0.07</item>
-        <item>com.twitter.android:0.07</item>
-        <item>com.google.android.youtube:0.07</item>
-    </string-array>
 </resources>

@@ -808,12 +808,12 @@ odm/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6895/ParameterDB_pipeline.
 odm/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6895/ParameterDB_tone.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tone/ParameterDB_tone.db;MAKE_COPY_RULE_ONLY
 odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw_21641/mt6895/ISP_mapping.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw_21641/ISP_mapping.db;MAKE_COPY_RULE_ONLY
 odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw_21641/mt6895/ISP_param.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw_21641/ISP_param.db;MAKE_COPY_RULE_ONLY
-odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx355_mipi_raw_21641/mt6895/ISP_mapping.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx355_mipi_raw_21641/ISP_mapping.db;MAKE_COPY_RULE_ONLY
-odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx355_mipi_raw_21641/mt6895/ISP_param.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx355_mipi_raw_21641/ISP_param.db;MAKE_COPY_RULE_ONLY
-odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw_21641/mt6895/ISP_mapping.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw_21641/ISP_mapping.db;MAKE_COPY_RULE_ONLY
-odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw_21641/mt6895/ISP_param.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw_21641/ISP_param.db;MAKE_COPY_RULE_ONLY
-odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw_21641/mt6895/ISP_mapping.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw_21641/ISP_mapping.db;MAKE_COPY_RULE_ONLY
-odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw_21641/mt6895/ISP_param.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw_21641/ISP_param.db;MAKE_COPY_RULE_ONLY
+odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx355_mipi_raw_21861/mt6895/ISP_mapping.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx355_mipi_raw_21861/ISP_mapping.db;MAKE_COPY_RULE_ONLY
+odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx355_mipi_raw_21861/mt6895/ISP_param.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx355_mipi_raw_21861/ISP_param.db;MAKE_COPY_RULE_ONLY
+odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw_21861/mt6895/ISP_mapping.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw_21861/ISP_mapping.db;MAKE_COPY_RULE_ONLY
+odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw_21861/mt6895/ISP_param.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx766_mipi_raw_21861/ISP_param.db;MAKE_COPY_RULE_ONLY
+odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw_21861/mt6895/ISP_mapping.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw_21861/ISP_mapping.db;MAKE_COPY_RULE_ONLY
+odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw_21861/mt6895/ISP_param.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5k3p9sp_mipi_raw_21861/ISP_param.db;MAKE_COPY_RULE_ONLY
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/mt6895/top_control_data.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/top_control_data.db;MAKE_COPY_RULE_ONLY
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6895/ISP_mapping.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_mapping.db;MAKE_COPY_RULE_ONLY
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6895/ISP_param.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_param.db;MAKE_COPY_RULE_ONLY
@@ -823,6 +823,7 @@ vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6895/ISP_info.db;SYMLI
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ISP_info.db;MAKE_COPY_RULE_ONLY
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db;MAKE_COPY_RULE_ONLY
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/top_control_data.db;MAKE_COPY_RULE_ONLY
+vendor/lib64/libSQLiteModule_VER_ALL.so
 
 # Charger firmware
 odm/firmware/fastchg/21861/oplus_vooc_fw_op10.bin
@@ -870,9 +871,11 @@ vendor/lib64/libion_ulit.so
 vendor/lib64/libmml.so
 vendor/lib64/libnpagent.so
 vendor/lib64/mt6895/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
-vendor/lib64/mt6895/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.sovendor.oplus.hardware.biometrics.fingerprint@2.1-service
+vendor/lib64/mt6895/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
 
 # Display (Picture Quality)
+my_product/vendor/etc/cust_silky_brightness_boe.xml:vendor/etc/cust_silky_brightness_boe.xml
+my_product/vendor/etc/cust_silky_brightness_tianma.xml:vendor/etc/cust_silky_brightness_tianma.xml
 odm/etc/cust_pq_21861_tianma.xml
 odm/etc/cust_pq_21861_boe.xml
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
@@ -919,6 +922,7 @@ vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so
 
 # Fingerprint
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
+odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so;MODULE_SUFFIX=_odm
 odm/bin/init.oplus.fingerprints.sh
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml

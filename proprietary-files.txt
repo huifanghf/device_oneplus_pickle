@@ -426,6 +426,7 @@ odm/etc/camera/tonemap/tonemap_lut_8
 odm/etc/camera/tonemap/tonemap_lut_9
 odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
 odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml
+odm/etc/vintf/manifest/manifest_oplus_sendextcamcmd.xml
 odm/lib64/libcamera_core_hwi.so
 odm/lib64/libmpbase.so
 odm/lib64/libocam_common.so

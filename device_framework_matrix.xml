@@ -1,11 +1,15 @@
 <compatibility-matrix version="8.0" type="framework">
     <hal format="hidl" optional="true">
 	<name>android.hardware.biometrics.fingerprint</name>
+	<transport>hwbinder</transport>
+	<version>2.1</version>
         <version>2.3</version>
         <interface>
             <name>IBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
+	    <instance>default</instance>
+	</interface>
+	    <fqname>@2.1::IBiometricsFingerprint/default</fqname>
+	    <fqname>@2.3::IBiometricsFingerprint/default</fqname>
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.display.PanelChaplin</name>

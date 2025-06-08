@@ -130,9 +130,10 @@
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
-        <item>0</item>
-        <item>1</item>
-        <item>3</item>
+        <item>0</item>    <!-- Vivid, RenderIntent[0], PQModeId[7] -->
+        <item>256</item>  <!-- Natural, RenderIntent[256], PQModeId[23] -->
+        <item>258</item>  <!-- Cinematic, RenderIntent[258], PQModeId[10] -->
+        <item>259</item>  <!-- Brilliant, RenderIntent[259], PQModeId[11] -->
     </integer-array>
 
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
@@ -425,16 +426,30 @@
     <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
     <bool name="config_telephony5gNonStandalone">true</bool>
 
-<!-- A string config in svg path format for the main display shape.
- 	 (@see https://www.w3.org/TR/SVG/paths.html#PathData).
+    <!-- A string config in svg path format for the main display shape.
+         (@see https://www.w3.org/TR/SVG/paths.html#PathData).
 
          This config must be set unless:
          1. {@link Configuration#isScreenRound} is true which means the display shape is circular
             and the system will auto-generate a circular shape.
          2. The display has no rounded corner and the system will auto-generate a rectangular shape.
-	 (@see DisplayShape#createDefaultDisplayShape)
+         (@see DisplayShape#createDefaultDisplayShape)
 
          Note: If the display supports multiple resolutions, please define the path config based on
          the highest resolution so that it can be scaled correctly in each resolution. -->
     <string name="config_mainDisplayShape">M20 0h1040s20 0 20 20v2360s0 20 -20 20h-1040s-20 0 -20 -20v-2360s0 -20 20 -20</string>
+
+    <!-- The list of packages to automatically opt in of fresh rate suppressing by small area
+         detection. Format of this array should be packageName:threshold and threshold value should
+         be between 0 to 1-->
+    <string-array name="config_smallAreaDetectionAllowlist" translatable="false">
+        <!-- Add packages:threshold here -->
+        <item>com.google.android.youtube:0.07</item>
+        <item>com.spotify.music:0.05</item>
+        <item>com.reddit.frontpage:0.07</item>
+        <item>com.zhiliaoapp.musically:0.07</item>
+        <item>com.bilibili.app.in:0.07</item>
+        <item>com.twitter.android:0.07</item>
+        <item>com.google.android.youtube:0.07</item>
+    </string-array>
 </resources>
